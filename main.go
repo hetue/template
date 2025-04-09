@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/hetue/axure/internal"
 	"github.com/hetue/core"
+	"github.com/hetue/todo/internal"
 )
 
 func main() {
