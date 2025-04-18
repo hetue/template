@@ -1,14 +1,14 @@
 package config
 
 import (
-	"github.com/pangum/pangu"
+	"github.com/harluo/boot"
 )
 
 type Todo struct {
 	// TODO
 }
 
-func newTodo(config *pangu.Config) (todo *Todo, err error) {
+func newTodo(config *boot.Config) (todo *Todo, err error) {
 	todo = new(Todo)
 	err = config.Build().Get(todo)
 

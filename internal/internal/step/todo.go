@@ -3,18 +3,18 @@ package step
 import (
 	"context"
 
-	"github.com/hetue/core"
+	"github.com/hetue/boot"
 	"github.com/hetue/todo/internal/internal/config"
 )
 
-var _ core.Step = (*Todo)(nil)
+var _ boot.Step = (*Todo)(nil)
 
 type Todo struct {
 	config  *config.Todo
-	command *core.Command
+	command *boot.Command
 }
 
-func newTodo(config *config.Todo, command *core.Command) *Todo {
+func newTodo(config *config.Todo, command *boot.Command) *Todo {
 	return &Todo{
 		config:  config,
 		command: command,
